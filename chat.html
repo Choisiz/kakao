@@ -12,7 +12,7 @@
     <title>Chat | kakao</title>
   </head>
 
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">17:06</span>
@@ -45,27 +45,45 @@
       </div>
     </header>
 
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">2020년 3월 13일 금요일</span>
 
         <li class="incoming-message message">
-          <img src="images/iu.jpg" class="g-avatar message_-avatar" />
+          <img src="images/iu.jpg" class="m-avatar message__avatar" />
           <div class="message__content">
-            <span class="message__avatar">아이유</span>
-            <div class="message__bubble">
-              Hello ~ 경열. 잘지내?
-            </div>
+            <span class="message__author">아이유</span>
+            <span class="message__bubble">
+              Hello ~ KyungYeul
+            </span>
           </div>
+        </li>
+
+        <li class="sent-message message">
           <span class="message__timestamp">15:27</span>
+          <div class="message__content">
+            <span class="message__bubble">
+              안녕!! 오랜만이다. 요즘 모하고 지냈어?
+            </span>
+          </div>
         </li>
 
         <li class="incoming-message message">
+          <img src="images/iu.jpg" class="m-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">아이유</span>
+            <span class="message__bubble">
+              Hello ~ 경열. 잘지내?
+            </span>
+          </div>
+        </li>
+
+        <li class="sent-message message">
           <span class="message__timestamp">15:27</span>
           <div class="message__content">
-            <div class="message__bubble">
+            <span class="message__bubble">
               안녕!! 오랜만이다.
-            </div>
+            </span>
           </div>
         </li>
       </ul>
